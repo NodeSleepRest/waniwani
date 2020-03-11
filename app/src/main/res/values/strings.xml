@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Waniwani</string>
+    <string name="descWani">ワニだよ</string>
+    <string name="descBusinessMan">被捕食者</string>
+    <string name="descAttackEffect">攻撃エフェクト</string>
+    <string name="hp">ＨＰ：</string>
+    <string name="win">You Win!!!</string>
+    <string name="lose">You Lose…</string>
+    <string name="training">特訓</string>
+</resources>

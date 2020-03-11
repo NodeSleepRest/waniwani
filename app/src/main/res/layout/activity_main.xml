@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/descWani"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wani" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/descWani"
+        app:layout_constraintStart_toEndOf="@+id/img1"
+        app:layout_constraintTop_toTopOf="@+id/img1"
+        app:srcCompat="@drawable/wani" />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/descWani"
+        app:layout_constraintStart_toEndOf="@+id/img2"
+        app:layout_constraintTop_toTopOf="@+id/img2"
+        app:srcCompat="@drawable/wani" />
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/descWani"
+        app:layout_constraintStart_toEndOf="@+id/img3"
+        app:layout_constraintTop_toTopOf="@+id/img3"
+        app:srcCompat="@drawable/wani" />
+
+    <TextView
+        android:id="@+id/lifePointHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/hp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lifePoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lifePointHeader"
+        app:layout_constraintStart_toEndOf="@+id/lifePointHeader" />
+
+    <TextView
+        android:id="@+id/txtWinLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lifePoint"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/enemyImgView"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/descBusinessMan"
+        app:layout_constraintBottom_toTopOf="@+id/lifePointHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/business_man1" />
+
+    <ImageView
+        android:id="@+id/attackImg1"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/descAttackEffect"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/img1"
+        app:layout_constraintTop_toBottomOf="@+id/img1"
+        app:srcCompat="@drawable/bakuhatsu" />
+
+    <ImageView
+        android:id="@+id/attackImg2"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/descAttackEffect"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/img1"
+        app:layout_constraintTop_toBottomOf="@+id/img2"
+        app:srcCompat="@drawable/bakuhatsu" />
+
+    <ImageView
+        android:id="@+id/attackImg3"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/descAttackEffect"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/img2"
+        app:layout_constraintTop_toBottomOf="@+id/img3"
+        app:srcCompat="@drawable/bakuhatsu" />
+
+    <ImageView
+        android:id="@+id/attackImg4"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/descAttackEffect"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/img3"
+        app:layout_constraintTop_toBottomOf="@+id/img4"
+        app:srcCompat="@drawable/bakuhatsu" />
+
+    <TextView
+        android:id="@+id/txtLife1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFABD1"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/img1"
+        app:layout_constraintTop_toTopOf="@+id/img1" />
+
+    <TextView
+        android:id="@+id/txtLife2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFABD1"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/img2"
+        app:layout_constraintTop_toTopOf="@+id/img2" />
+
+    <TextView
+        android:id="@+id/txtLife3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFABD1"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/img3"
+        app:layout_constraintTop_toTopOf="@+id/img3" />
+
+    <TextView
+        android:id="@+id/txtLife4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFABD1"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/img4"
+        app:layout_constraintTop_toTopOf="@+id/img4" />
+
+    <TextView
+        android:id="@+id/txtStrong1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#5BDEFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtLife1"
+        app:layout_constraintTop_toBottomOf="@+id/txtLife1" />
+
+    <TextView
+        android:id="@+id/txtStrong2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#5BDEFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtLife2"
+        app:layout_constraintTop_toBottomOf="@+id/txtLife2" />
+
+    <TextView
+        android:id="@+id/txtStrong3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#5BDEFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtLife3"
+        app:layout_constraintTop_toBottomOf="@+id/txtLife3" />
+
+    <TextView
+        android:id="@+id/txtStrong4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#5BDEFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtLife4"
+        app:layout_constraintTop_toBottomOf="@+id/txtLife4" />
+
+    <Button
+        android:id="@+id/btnTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/training"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/enemyImgView"
+        app:layout_constraintStart_toStartOf="@+id/enemyImgView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
